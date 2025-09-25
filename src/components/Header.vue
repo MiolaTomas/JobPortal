@@ -39,6 +39,7 @@ function toggleMenu() {
     position: fixed;
     top: 0;
     left: 0;
+    background-color: white;
 }
 
 .navbar {
@@ -137,8 +138,6 @@ function toggleMenu() {
         /* show when active */
     }
 
-    .nav-links button {
-        background-color: var(--main-black);
-    }
+    .nav-links button {}
 }
 </style>
