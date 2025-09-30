@@ -34,11 +34,11 @@ function toggleMenu() {
 <style>
 .header {
     width: 100%;
-    height: 4em;
     position: fixed;
     top: 0;
     left: 0;
     background-color: white;
+    align-items: center;
 }
 
 .navbar {
@@ -130,7 +130,7 @@ function toggleMenu() {
     .nav-links ul {
         flex-direction: column;
         gap: 1em;
-        margin-top: .5em;
+        margin-top: 1em;
         margin-left: 3em;
     }
 
