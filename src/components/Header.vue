@@ -18,9 +18,10 @@ function toggleMenu() {
 
             <div class="nav-links" :class="{ active: menuOpen }">
                 <ul>
-                    <li><a href=" #">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href=" #">Inicio</a></li>
+                    <li><a href="#">Trabajos</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><button>Post a job</button></li>
                 </ul>
             </div>
             <button class="hamburger" @click="toggleMenu">
@@ -77,6 +78,7 @@ function toggleMenu() {
     display: flex;
     gap: 1em;
     list-style: none;
+    align-items: center;
 }
 
 
@@ -84,6 +86,20 @@ function toggleMenu() {
     text-decoration: none;
     color: var(--main-text);
     font-weight: 600;
+}
+
+.nav-links button {
+    background-color: var(--cta-green);
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav-links button:hover {
+    background-color: var(--cta-green-hover);
 }
 
 .nav-links a:hover {
@@ -138,6 +154,5 @@ function toggleMenu() {
         /* show when active */
     }
 
-    .nav-links button {}
 }
 </style>
