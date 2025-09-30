@@ -21,7 +21,6 @@ function toggleMenu() {
                     <li><a href=" #">Home</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Contacts</a></li>
-                    <button>Post a job</button>
                 </ul>
             </div>
             <button class="hamburger" @click="toggleMenu">
@@ -64,7 +63,7 @@ function toggleMenu() {
 
 .logo span {
     font-style: normal;
-    color: var(--main-black);
+    color: var(--main-text);
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -84,14 +83,15 @@ function toggleMenu() {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--font-black-before-hover);
+    color: var(--main-text);
     font-weight: 600;
 }
 
 .nav-links a:hover {
     text-decoration: none;
-    color: var(--main-black);
+    color: var(--cta-green);
 }
+
 
 .hamburger {
     display: none;
@@ -102,6 +102,7 @@ function toggleMenu() {
 }
 
 @media (max-width: 640px) {
+
     .hamburger {
         display: flex;
         font-size: 1.5em;

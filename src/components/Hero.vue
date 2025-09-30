@@ -5,11 +5,18 @@
 <template>
     <div class="hero">
         <div class="hero-content">
-            <h1>Welcome to My App</h1>
-            <p>Learning Vue with a beautiful hero section ✨</p>
-            <button>Get Started</button>
+            <h1>Join us & <span>Explore</span></h1>
+            <h1><span>Thousands</span> of Jobs</h1>
+            <p>Find Jobs, Employment & Career Opportunities. Some of the companies we've helped recruit excellent
+                applicants over the years.</p>
+            <div class="hero-search-bar">
+                <div class="keyword">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <input type="text" placeholder="Search keyword">
+                </div>
+                <button>Search</button>
+            </div>
         </div>
-
     </div>
 </template>
 
@@ -19,79 +26,73 @@ body {
     /* same as header height */
 }
 
-.search-bar {
+h1 {
+    color: #0f172b;
+    font-size: 3em;
+}
+
+span {
+    color: #009966;
+}
+
+p {
+    color: #90a1b9;
+    width: 80%;
+    margin: 1em auto;
+}
+
+.hero {
+    width: 100%;
+    height: calc(97vh - 4em);
+    background-color: #f2faf7;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
-    border-radius: 2rem;
-    margin-top: 1em;
-    overflow: hidden;
-    max-width: 500px;
+    text-align: center;
+}
+
+.hero-search-bar {
+    width: 80%;
+    background-color: white;
+    margin: 1.5em auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    border-radius: .2em;
+    display: flex;
+    padding: .5em;
+    justify-content: space-between;
+}
+
+.keyword {
+    padding: .8em;
+    display: flex;
     width: 100%;
 }
 
-
-.hero {
-    width: 90%;
-    height: calc(97vh - 4em);
-    background-color: #1e483e;
-    background: linear-gradient(135deg,
-            #7be4c8 0%,
-            #42b883 35%,
-            #35495e 90%);
-
-    /* soft gradient */
-    border-radius: 1.5rem;
-    /* adjust this for more/less roundness */
-    overflow: hidden;
-    margin: 0 auto;
-    /* ensures child elements like waves don't "leak" outside */
-}
-
-.hero {
-    width: 90%;
-    height: calc(97vh - 4em);
-    background: linear-gradient(135deg,
-            #7be4c8 0%,
-            #42b883 35%,
-            #35495e 90%);
-    border-radius: 1.5rem;
-    overflow: hidden;
-
-    display: flex;
-    /* enable flexbox */
-    justify-content: center;
-    /* center horizontally */
-    align-items: center;
-    /* center vertically */
-    text-align: center;
-    color: white;
-    padding: 2rem;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero-content p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-}
-
-.hero-content button {
-    background: white;
-    color: #35495e;
+.hero-search-bar button {
+    background-color: #009966;
     border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.75rem;
-    font-size: 1rem;
+    color: white;
     cursor: pointer;
-    transition: background 0.3s ease;
+    padding: 0 2em;
+    border-radius: .2em;
 }
 
-.hero-content button:hover {
-    background: #f0f0f0;
+.hero-search-bar button:hover {
+    background-color: #008357;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0 2em;
+    border-radius: .2em;
+}
+
+.keyword input {
+    all: unset;
+    all: unset;
+    display: inline-block;
+    width: 100%;
+    color: #90a1b9;
 }
 </style>
