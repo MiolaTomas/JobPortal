@@ -12,8 +12,8 @@ function toggleMenu() {
     <div class="header">
         <div class="navbar">
             <div class="logo">
-                <img src="../assets//vue.png" alt="">
-                <span>JsJobs</span>
+                <img src="../assets//logo1.png" alt="">
+                <span>VueBoard</span>
             </div>
 
             <div class="nav-links" :class="{ active: menuOpen }">
@@ -57,8 +57,7 @@ function toggleMenu() {
 }
 
 .logo img {
-    width: 2em;
-    height: 1.7em;
+    width: 3em;
 }
 
 .logo span {
