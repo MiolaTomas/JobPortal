@@ -1,4 +1,4 @@
-<h1 align="center">Proyecto Portal de trabajo</h1>
+# Proyecto Portal De Trabajo
 
 <!-- ![image alt](https://github.com/MiolaTomas/JobPortal/blob/main/src/assets/logo1.png?raw=true) -->
 
