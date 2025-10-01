@@ -78,7 +78,7 @@ function toggleMenu() {
     display: flex;
     gap: 1em;
     list-style: none;
-    align-items: center;
+    align-items: flex-start;
 }
 
 
@@ -96,6 +96,7 @@ function toggleMenu() {
     border-radius: .2em;
     cursor: pointer;
     font-weight: 600;
+    font-size: .9em;
 }
 
 .nav-links button:hover {
