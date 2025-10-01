@@ -78,7 +78,7 @@ function toggleMenu() {
     display: flex;
     gap: 1em;
     list-style: none;
-    align-items: flex-start;
+    align-items: center;
 }
 
 
@@ -139,15 +139,14 @@ function toggleMenu() {
         top: 4em;
         width: 100%;
         height: 100vh;
-        align-items: flex-start;
         background-color: white;
     }
 
     .nav-links ul {
         flex-direction: column;
         gap: 1em;
+        font-size: 1.5em;
         margin-top: 1em;
-        margin-left: 3em;
     }
 
     .nav-links.active {
